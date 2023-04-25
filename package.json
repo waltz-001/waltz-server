@@ -18,6 +18,8 @@
     "joi-password-complexity": "^5.1.0",
     "mongodb": "^5.3.0",
     "mongoose": "^7.0.4",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2"
   }
 }
