@@ -6,7 +6,7 @@ const express = require('express');
 const router = express.Router();
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
-
+const sendVerifymail = require("../utilities/sendMail");
 /**
  * @swagger
  * components:
@@ -21,6 +21,7 @@ const bcrypt = require("bcrypt");
  *         - contactNumber
  *         - userRole
  *         - department
+ *         - rollNo
  *         - year
  *         - batch
  *         - companyName
@@ -48,6 +49,9 @@ const bcrypt = require("bcrypt");
  *         department:
  *           type: string
  *           description: User Department
+ *         rollNo:
+ *           type: string
+ *           description: User Roll No
  *         year:
  *           type: Number
  *           description: User year in College
@@ -71,6 +75,7 @@ const bcrypt = require("bcrypt");
  *         contactNumber: "9123123123"
  *         userRole: UITAN
  *         department: IT
+ *         rollNo: "20203005"
  *         year: 3
  *         batch: 2020-2024
  *         companyName: ""
@@ -99,8 +104,9 @@ router.post("/", async (req, res) => {
             userId: user._id,
             token: crypto.randomBytes(32).toString("hex"),
         }).save();
-        //const url = `${process.env.PORT}users/${user.id}/verify/${token.token}`;
-        //await sendEmail(user.email, "Verify Email", url);
+        
+        const url = `${process.env.BASE_URL}/register/${user.id}/verify/${token.token}`;
+        await sendVerifymail(user.email, "Verify Email",url);
         res
             .status(201)
             .send({ message: "An Email sent to your account please verify" });
