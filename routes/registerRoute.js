@@ -86,6 +86,7 @@ const sendVerifymail = require("../utilities/sendMail");
 router.post("/", async (req, res) => {
     try {
         const { error } = validate(req.body);
+        var hostname = req.headers.host; // hostname = 'localhost:8080'
         if (error)
             return res.status(400).send({ message: error.details[0].message });
 
@@ -105,7 +106,7 @@ router.post("/", async (req, res) => {
             token: crypto.randomBytes(32).toString("hex"),
         }).save();
         
-        const url = `${process.env.BASE_URL}/register/${user.id}/verify/${token.token}`;
+        const url = `https://${hostname}/register/${user.id}/verify/${token.token}`;
         await sendVerifymail(user.email, "Verify Email",url);
         res
             .status(201)
