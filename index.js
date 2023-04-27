@@ -7,8 +7,6 @@ const registerRoute = require('./routes/registerRoute');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
 
-var hostname = req.headers.host; // hostname = 'localhost:8080'
-
 const options = {
 	definition: {
 		openapi: "3.0.0",
@@ -19,7 +17,7 @@ const options = {
 		},
 		servers: [
 			{
-				url: hostname,
+				url: "https://waltz-server.onrender.com/",
 			},
 		],
 	},
