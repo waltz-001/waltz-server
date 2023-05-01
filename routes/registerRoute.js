@@ -7,6 +7,7 @@ const router = express.Router();
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const sendVerifymail = require("../utilities/sendMail");
+const verifyEmailTemplate = require("../emailTemplates");
 /**
  * @swagger
  * components:
@@ -86,7 +87,6 @@ const sendVerifymail = require("../utilities/sendMail");
 router.post("/", async (req, res) => {
     try {
         const { error } = validate(req.body);
-        var hostname = req.headers.host; // hostname = 'localhost:8080'
         if (error)
             return res.status(400).send({ message: error.details[0].message });
 
@@ -106,8 +106,9 @@ router.post("/", async (req, res) => {
             token: crypto.randomBytes(32).toString("hex"),
         }).save();
         
-        const url = `https://${hostname}/register/${user.id}/verify/${token.token}`;
-        await sendVerifymail(user.email, "Verify Email",url);
+        //const url = `https://${hostname}/register/${user.id}/verify/${token.token}`;
+        const body = verifyEmailTemplate(user.firstName, user.id, token.token)
+        await sendVerifymail(user.email, "Verify Email", body);
         res
             .status(201)
             .send({ message: "An Email sent to your account please verify" });

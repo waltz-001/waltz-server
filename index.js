@@ -17,7 +17,7 @@ const options = {
 		},
 		servers: [
 			{
-				url: "https://waltz-server.onrender.com/",
+				url: process.env.SERVER_URL,
 			},
 		],
 	},
