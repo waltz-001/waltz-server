@@ -10,7 +10,7 @@ const verifyEmailTemplate = (name, id, token) => ( `
 		<td>
 			<p style=" font-size: 20px; font-family: sans-serif;">
 				Dear ${name}, </br>
-				We're super excited you joined today and created your WALTZ account.</br> You are just a few clicks before registering for waltz2023.
+				We're super excited you joined today and created your WALTZ account.</br> You are just a few clicks away registering for Waltz 2023.
 			</p>
 	</tr>
 	<tr>
