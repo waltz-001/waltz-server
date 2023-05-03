@@ -26,7 +26,7 @@ const verifyEmailTemplate = (name, id, token) => ( `
 	<tr>
 		<td>
 			<p style=" font-size: 16px; font-family: sans-serif; text-align: center; color: #5B13D1; margin: 10px;">
-				This message is an automated alert from waltz2k23.com.
+				This message is an automated alert from waltzuit.in
 			</p>
 			</td>
 	</tr>
