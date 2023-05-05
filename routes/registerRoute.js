@@ -105,7 +105,7 @@ router.post("/", async (req, res) => {
             userId: user._id,
             token: crypto.randomBytes(32).toString("hex"),
         }).save();
-        
+
         //const url = `https://${hostname}/register/${user.id}/verify/${token.token}`;
         const body = verifyEmailTemplate(user.firstName, user.id, token.token)
         await sendVerifymail(user.email, "Verify Email", body);

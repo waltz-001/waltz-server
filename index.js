@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const connection = require("./db_connection");
 const registerRoute = require('./routes/registerRoute');
+const resetPasswordRoute = require('./routes/resetPasswordRoute');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
 
@@ -38,6 +39,8 @@ app.use(cors());
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 app.use("/register", registerRoute);
+
+app.use("/reset-password", resetPasswordRoute);
 
 const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));
