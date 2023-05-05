@@ -58,7 +58,7 @@ router.get("/:email", async (req, res) => {
             userId: user._id,
             token: crypto.randomBytes(32).toString("hex"),
         }).save();
-        await sendMail(user.email, "Reset Password", `https://${process.env.CLIENT_URL}/reset-password/${user._id}/update/${token.token}`);
+        await sendMail(user.email, "Reset Password", `${process.env.CLIENT_URL}/reset-password/${user._id}/update/${token.token}`);
         return res.status(200).send({_idFound: true, _id: user._id});
     }
     catch (err) {
