@@ -123,7 +123,7 @@ router.put("/:id/reset-password/:token", async (req, res) => {
         await sendMail(user.email, "Security Alert", strmail);
         const salt = await bcrypt.genSalt(Number(process.env.SALT));
 		const hashPassword = await bcrypt.hash(req.body.password, salt);
-        await User.updateOne({ _id: user._id , password: hashPassword });
+        await User.updateOne({ _id: user._id },{ password: hashPassword });
         await ResetPasswordToken.deleteOne({
             userId: user._id,
             token: req.params.token,
