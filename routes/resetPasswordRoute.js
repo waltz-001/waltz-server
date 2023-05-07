@@ -8,7 +8,7 @@ const router = express.Router();
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const sendMail = require("../utilities/sendMail");
-const verifyEmailTemplate = require("../emailTemplates");
+const {resetPasswordVerifyMail, passwordSecurityAlert} = require("../emailTemplates");
 const passwordComplexity = require("joi-password-complexity");
 
 /**
@@ -20,7 +20,7 @@ const passwordComplexity = require("joi-password-complexity");
  *       required:
  *         - password
  *       properties:
- *         id:
+ *         password:
  *           type: string
  *           description: Password
  *       example:
@@ -58,7 +58,8 @@ router.get("/:email", async (req, res) => {
             userId: user._id,
             token: crypto.randomBytes(32).toString("hex"),
         }).save();
-        await sendMail(user.email, "Reset Password", `https://${process.env.CLIENT_URL}/reset-password/${user._id}/update/${token.token}`);
+        const body = resetPasswordVerifyMail(user.firstName, user._id, token.token )
+        await sendMail(user.email, "Reset Password", body);
         return res.status(200).send({_idFound: true, _id: user._id});
     }
     catch (err) {
@@ -70,7 +71,7 @@ router.get("/:email", async (req, res) => {
  * @swagger
  * /reset-password/{userId}/reset-password/{token}:
  *   put:
- *     summary: Reset password 
+ *     summary: Reset password
  *     tags: [User]
  *     parameters:
  *       - in: path
@@ -119,19 +120,19 @@ router.put("/:id/reset-password/:token", async (req, res) => {
         const { error } = validate(pass);
         if(error)
         return res.status(400).send({ message: error.details[0].message });
-        let strmail="Hello "+user.firstName+"\nYour password has been changed! If not done by you, Contact Us at support";
-        await sendMail(user.email, "Security Alert", strmail);
+        let body=passwordSecurityAlert(user.firstName)
+        await sendMail(user.email, "Security Alert", body);
         const salt = await bcrypt.genSalt(Number(process.env.SALT));
 		const hashPassword = await bcrypt.hash(req.body.password, salt);
-        await User.updateOne({ _id: user._id , password: hashPassword });
+        await User.updateOne({ _id: user._id },{ password: hashPassword });
         await ResetPasswordToken.deleteOne({
             userId: user._id,
             token: req.params.token,
         });
-        return res.status(200).send({message: "Password Updated Successfully"});
+        return res.status(200).send({ message: "Password Updated Successfully" });
     }
     catch(error) {
-        return res.status(500).send({message: `Internal Server Error: ${error}`});
+        return res.status(500).send({ message: `Internal Server Error: ${error}` });
     }
 })
 

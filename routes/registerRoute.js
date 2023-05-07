@@ -7,7 +7,8 @@ const router = express.Router();
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const sendVerifymail = require("../utilities/sendMail");
-const verifyEmailTemplate = require("../emailTemplates");
+const { verifyEmailTemplate, congratesMail } = require("../emailTemplates");
+const sendMail = require("../utilities/sendMail");
 /**
  * @swagger
  * components:
@@ -143,8 +144,8 @@ router.post("/", async (req, res) => {
 
 router.get("/:id/verify/:token/", async (req, res) => {
     try {
-        if (!mongoose.Types.ObjectId.isValid(req.params.id)) 
-        return res.status(400).send({ message: "Invalid Link" });
+        if (!mongoose.Types.ObjectId.isValid(req.params.id))
+            return res.status(400).send({ message: "Invalid Link" });
 
         const user = await User.findOne({ _id: req.params.id });
         if (!user) return res.status(400).send({ message: "Invalid link" });
@@ -160,11 +161,15 @@ router.get("/:id/verify/:token/", async (req, res) => {
             userId: user._id,
             token: req.params.token,
         });
-        await User.updateOne({ _id: user._id},{verified: true })
-        .then(
-            result =>
-            res.status(200).send({ message: "Email verified successfully" })
-        )
+        const body = congratesMail(user.firstName);
+        //console.log(congratsMail)
+        await User.updateOne({ _id: user._id }, { verified: true })
+            .then(
+                async(result) => {
+                    await sendMail(user.email, "Congrats you have Successfully Registered for Waltz 2023", body)
+                    res.status(200).send({ message: "Email verified successfully" })
+                }
+            )
     } catch (error) {
         console.log(error);
         res.status(500).send({ message: `Internal Server Error${error}` });
