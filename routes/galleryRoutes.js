@@ -5,51 +5,33 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const { Event } = require('../models/event');
 const passport = require('passport');
+const { Gallery } = require('../models/gallery');
 
 /**
  * @swagger
  * components:
  *   schemas:
- *     Event:
+ *     Gallery:
  *       type: object
  *       required:
  *         - title
  *         - imageUrl
  *         - description
- *         - date
- *         - hot
- *         - startTime
- *         - endTime
+ *         - type
  *       properties:
  *         title:
  *           type: string
- *           description: Event Title
+ *           description: Image Title
  *         imageUrl:
  *           type: string
- *           description: Event Image Url
- *         description:
+ *           description: Image Url
+ *         type:
  *           type: string
- *           description: Event Description
- *         date:
- *           type: number
- *           description: Event date 25/26/27
- *         hot:
- *           type: boolean
- *           description: True if its a hot event
- *         startTime:
- *           type: string
- *           description: Event Start time
- *         endTime:
- *           type: string
- *           description: Event End Time
+ *           description: Image Type
  *       example:
  *         title: DJ Night
- *         imagePublicId: https://res.cloudinary.com/dwunsncqo/image/upload/v1683548974/event_image_kt8ck0.png
- *         description: Music
- *         date: 26
- *         hot: true
- *         startTime: "20:00"
- *         endTime: "22:00"
+ *         imageUrl: https://res.cloudinary.com/dwunsncqo/image/upload/v1683547333/cld-sample-3.jpg
+ *         type: Featured
  */
 
 /**
@@ -64,15 +46,15 @@ const passport = require('passport');
 
 /**
  * @swagger
- * /events:
+ * /gallery:
  *   get:
- *     summary: Get all Fest Events
- *     tags: [Event]
+ *     summary: Get all Gallery Image
+ *     tags: [Gallery]
  *     security:
  *       - bearerAuth: []
  *     responses:
  *       200:
- *         description: Fetched all events sucessfully
+ *         description: Fetched all gallery sucessfully
  *       401:
  *         description: Unauthorized
  *       500:
@@ -81,17 +63,19 @@ const passport = require('passport');
 
 router.get("/", passport.authenticate('jwt', {session : false}), async (req, res) => {
     try{
-        const events = await Event.find({});
-        return res.status(200).send({ events: events})
+        const gallery = await Gallery.find({});
+        return res.status(200).send({ gallery: gallery})
     }catch(err) {
         return res.status(500).send({message: `Internal Server Error: ${err}`})
     }
 })
 
+
+
 router.post("/", async (req, res) => {
     try{
-        const event = await new Event({...req.body}).save();
-        return res.status(200).send({ message: "Event Added Successfully"})
+        const gallery = await new Gallery({...req.body}).save();
+        return res.status(200).send({ message: "Gallery Image Added Successfully"})
     }
     catch(error){
         return res.status(500).send({ message: `Internal Server Error: ${error}`})
