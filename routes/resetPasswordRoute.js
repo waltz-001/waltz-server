@@ -122,9 +122,9 @@ router.put("/:id/reset-password/:token", async (req, res) => {
         return res.status(400).send({ message: error.details[0].message });
         let body=passwordSecurityAlert(user.firstName)
         await sendMail(user.email, "Security Alert", body);
-        const salt = await bcrypt.genSalt(Number(process.env.SALT));
-		const hashPassword = await bcrypt.hash(req.body.password, salt);
-        await User.updateOne({ _id: user._id },{ password: hashPassword });
+        // const salt = await bcrypt.genSalt(Number(process.env.SALT));
+		// const hashPassword = await bcrypt.hash(req.body.password, salt);
+        await User.updateOne({ _id: user._id },{ password: req.body.password });
         await ResetPasswordToken.deleteOne({
             userId: user._id,
             token: req.params.token,

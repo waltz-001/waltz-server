@@ -9,6 +9,7 @@ const loginRoute = require('./routes/loginRoute');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
 const passport = require('passport');
+const eventRoute = require('./routes/eventRoutes');
 
 const options = {
 	definition: {
@@ -47,6 +48,8 @@ app.use("/register", registerRoute);
 app.use("/reset-password", resetPasswordRoute);
 
 app.use("/login", loginRoute);
+
+app.use("/events", eventRoute)
 
 app.get("/protected", passport.authenticate('jwt', {session : false}), (req, res) => {
 	return res.status(200).send({

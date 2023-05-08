@@ -90,18 +90,15 @@ router.post("/", async (req, res) => {
         const { error } = validate(req.body);
         if (error)
             return res.status(400).send({ message: error.details[0].message });
-
         let user = await User.findOne({ email: req.body.email });
         if (user)
             return res
                 .status(208)
                 .send({ message: "User with given email already Exist!" });
+        // const salt = await bcrypt.genSalt(Number(process.env.SALT));
+        // const hashPassword = await bcrypt.hash(req.body.password, salt);
 
-        const salt = await bcrypt.genSalt(Number(process.env.SALT));
-        const hashPassword = await bcrypt.hash(req.body.password, salt);
-
-        user = await new User({ ...req.body, password: hashPassword }).save();
-
+        user = await new User({ ...req.body}).save();
         const token = await new Token({
             userId: user._id,
             token: crypto.randomBytes(32).toString("hex"),
@@ -110,12 +107,12 @@ router.post("/", async (req, res) => {
         //const url = `https://${hostname}/register/${user.id}/verify/${token.token}`;
         const body = verifyEmailTemplate(user.firstName, user.id, token.token)
         await sendVerifymail(user.email, "Verify Email", body);
-        res
+        return res
             .status(201)
             .send({ message: "An Email sent to your account please verify" });
     }
     catch (err) {
-        res.status(500).send({ message: `Internal Server Error: ${err}` })
+        return res.status(500).send({ message: `Internal Server Error: ${err}` })
     }
 })
 

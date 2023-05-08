@@ -53,12 +53,12 @@ router.post("/", async (req, res) => {
         if(!user)
         return res.status(400).send({message: "Email not registered"})
 
-        const validPassword = await bcrypt.compare(
-			req.body.password,
-			user.password
-		);
+        // const validPassword = await bcrypt.compare(
+		// 	req.body.password,
+		// 	user.password
+		// );
 
-        if(!validPassword)
+        if(user.password!==req.body.password)
         return res.status(400).send({message: "Incorrect Password"})
 
         if(!user.verified)

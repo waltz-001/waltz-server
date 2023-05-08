@@ -96,7 +96,6 @@ a[x-apple-data-detectors] {
                         <p style="color: #ffffff; font-size: 16px; line-height: 150%; font-family: 'merriweather sans', 'helvetica neue', helvetica, arial, sans-serif;"><strong>Dear ${name},&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>We're super excited you joined today and created your WALTZ account.&nbsp;<br><br>You are just a few clicks away registering for Waltz 2023.<br><br><a href="https://${process.env.CLIENT_URL}/register/${id}/verify/${token}" style="background:#ff7a59;text-decoration:none !important; font-weight:500; margin-top:30px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block; margin-bottom:30px;"> Verify your Email</a></strong></p>
                     </td>
                      </tr>
-                     
                    </table></td>
                  </tr>
                </table></td>
