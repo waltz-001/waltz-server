@@ -11,6 +11,9 @@ const swaggerUI = require('swagger-ui-express');
 const passport = require('passport');
 const eventRoute = require('./routes/eventRoutes');
 const galleryRoute = require('./routes/galleryRoutes');
+const messageRoute = require('./routes/messageRoutes');
+const message = require("./models/message");
+const invitationRoute = require("./routes/invitationRoutes");
 
 const options = {
 	definition: {
@@ -54,12 +57,10 @@ app.use("/events", eventRoute)
 
 app.use("/gallery", galleryRoute)
 
-app.get("/protected", passport.authenticate('jwt', {session : false}), (req, res) => {
-	return res.status(200).send({
-		success: true,
-		user: req.user
-	})
-})
+app.use("/message", messageRoute)
+
+app.use("/getuserfirstname", invitationRoute)
+
 
 const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));
