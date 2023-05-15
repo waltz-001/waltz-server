@@ -56,7 +56,6 @@ const { Message } = require('../models/message')
 
 router.post("/", passport.authenticate('jwt', {session : false}), async (req, res) => {
     try{
-        console.log(req.user)
         const message = await new Message({
             userId: req.user._id,
             message: req.body.message
