@@ -6,7 +6,6 @@ const messageSchema = new Schema({
 		type: Schema.Types.ObjectId,
 		required: true,
 		ref: "user",
-		unique: true,
 	},
 	message: { type: String, required: true },
 });
