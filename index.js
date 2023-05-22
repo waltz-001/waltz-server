@@ -14,6 +14,10 @@ const galleryRoute = require('./routes/galleryRoutes');
 const messageRoute = require('./routes/messageRoutes');
 const message = require("./models/message");
 const invitationRoute = require("./routes/invitationRoutes");
+const { User } = require("./models/user");
+const { flashMobReminder } = require("./emailTemplates");
+const sendMail = require("./utilities/sendMail");
+const adminRoutes = require("./routes/adminRoutes")
 
 const options = {
 	definition: {
@@ -60,6 +64,28 @@ app.use("/gallery", galleryRoute)
 app.use("/message", messageRoute)
 
 app.use("/getuserfirstname", invitationRoute)
+
+app.use("/admin", adminRoutes)
+
+app.get("/send-email-notification", async (req, res) => {
+	try {
+		const users = await User.find({});
+		// console.log(users)
+		const body = flashMobReminder();
+		users.forEach(async (user, index) => {
+			setTimeout( async() => {
+				if (user.verified) {
+					console.log(user.email)
+					await sendMail(user.email, `Reminder!! for Waltz 2k23 FlashMob at Burdwan Railway Station`, body)
+				}
+			}, 1000 * index);
+		})
+		res.status(200).send({ message: "Successful" })
+
+	} catch (err) {
+		console.log(err)
+	}
+})
 
 
 const port = process.env.PORT || 8080;
