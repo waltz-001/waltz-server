@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const sendMail = async(userMail,Title,body) => {
     try {
         const transporter = nodemailer.createTransport({
-            host:'smtp.gmail.com',
+            host:'smtp.mailgun.org',
             port:587,
             secure:false,
             requireTLS:true,
@@ -14,7 +14,7 @@ const sendMail = async(userMail,Title,body) => {
         });
         const mailOptions = {
             from:process.env.EMAIL,
-            to:userMail,
+            to: userMail,
             subject:Title,
             html: body
         }
