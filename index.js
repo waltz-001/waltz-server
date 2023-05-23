@@ -67,7 +67,7 @@ app.use("/getuserfirstname", invitationRoute)
 
 app.use("/admin", adminRoutes)
 
-app.get("/", async (req, res) => {
+app.get("/send-email", async (req, res) => {
 	try {
 		const users = await User.find({});
 		// console.log(users)
