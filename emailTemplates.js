@@ -687,13 +687,13 @@ const flashMobReminder = () => (
   `
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" style="width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
- <head>
+<head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta name="x-apple-disable-message-reformatting">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="telephone=no" name="format-detection">
-  <title>WALTZ'2K23-3day-to-go</title>
+  <title>WALTZ'2K23-Fakira_Poster</title>
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700,700i" rel="stylesheet">
   <style type="text/css">
@@ -750,78 +750,81 @@ a[x-apple-data-detectors] {
            <table class="es-header-body" cellspacing="0" cellpadding="0" bgcolor="#2b2c2c" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#2B2C2C;width:600px">
              <tr style="border-collapse:collapse">
               <td align="left" style="padding:0;Margin:0;padding-top:20px;padding-left:20px;padding-right:20px"><!--[if mso]><table style="width:560px" cellpadding="0" cellspacing="0"><tr><td style="width:270px" valign="top"><![endif]-->
-               <table cellpadding="0" cellspacing="0" class="es-left" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
-                 <tr style="border-collapse:collapse">
+              <table cellpadding="0" cellspacing="0" class="es-left" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                <tr style="border-collapse:collapse">
                   <td class="es-m-p20b" align="left" style="padding:0;Margin:0;width:270px">
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                     <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                      <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
                         <td align="center" class="esd-block-image" style="font-size: 0px;">
                             <a target="_blank">
-                                <img class="adapt-img" src="https://res.cloudinary.com/dqyjrqcde/image/upload/v1684561175/WhatsApp_Image_2023-05-20_at_10.55.54_uk2sbc.jpg" alt style="display: block;" width="600">
+                                <img class="adapt-img" src="https://res.cloudinary.com/dqyjrqcde/image/upload/v1684894733/WhatsApp_Image_2023-05-23_at_23.02.53_da2zij.jpg" alt style="display: block;" width="600">
                             </a>
                         </td>
-
-       <table cellpadding="0" cellspacing="0" class="es-footer" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">
-         <tr style="border-collapse:collapse">
-          <td align="center" style="padding:0;Margin:0">
-           <table class="es-footer-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#212121;width:600px" cellspacing="0" cellpadding="0" bgcolor="#212121" align="center">
-             <tr style="border-collapse:collapse">
-              <td align="left" style="Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:30px">
-               <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                 <tr style="border-collapse:collapse">
-                  <td valign="top" align="center" style="padding:0;Margin:0;width:560px">
-                   <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                     <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
-                      <td align="center" style="padding-right:28px;Margin:0;padding-bottom:15px;font-size:0px" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img src="https://res.cloudinary.com/dqyjrqcde/image/upload/v1682863416/img20230428093053-1_jgob5w.png" alt="Automotive logo" title="Automotive logo" width="158" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></td>
-                     </tr>
-                      <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
-                      <td align="center" style="padding:0;Margin:0;padding-bottom:15px;font-size:0">
-                       <table class="es-table-not-adapt es-social" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                         <tr style="border-collapse:collapse">
-                          <td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px"><a target="_blank" href="https://www.facebook.com/waltz.uit?mibextid=ZbWKwL" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Facebook" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/facebook-logo-gray.png" alt="Fb" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                          <td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px"><a target="_blank" href="https://www.instagram.com/waltz.uitbu/" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Instagram" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/instagram-logo-gray.png" alt="Inst" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                          <td valign="top" align="center" style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href="https://www.youtube.com/@uitwaltz23" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Youtube" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/youtube-logo-gray.png" alt="Yt" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                          <td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px"><a target="_blank" href="https://linkedin.com" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Linkedin" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/linkedin-logo-gray.png" alt="Tw" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
-                         </tr>
-                       </table></td>
                       </tr>
-                     <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
-                      <td align="center" spellcheck="false" data-ms-editor="true" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:20px;color:#A2A2A2;font-size:13px">GOLAPBAG (NORTH), G.T. ROAD, BURDWAN, PURBA BARDHAMAN || WEST BENGAL, INDIA. PIN - 713104</p></td>
-                     </tr>
-                     <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
-                      <td align="center" spellcheck="false" data-ms-editor="true" style="padding:0;Margin:0;padding-top:5px" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"></a><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:20px;color:#A2A2A2;font-size:13px">This message an automated alert from <a href="https://www.waltzuit.in">waltzuit.in</a></p></td>
-                     </tr>
-                   </table></td>
-                 </tr>
-               </table></td>
-             </tr>
-           </table></td>
-         </tr>
-       </table>
-       <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
-         <tr style="border-collapse:collapse">
-          <td align="center" style="padding:0;Margin:0">
-           <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px" cellspacing="0" cellpadding="0" align="center">
-             <tr style="border-collapse:collapse">
-              <td align="left" style="Margin:0;padding-left:20px;padding-right:20px;padding-top:30px;padding-bottom:30px">
-               <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                 <tr style="border-collapse:collapse">
-                  <td valign="top" align="center" style="padding:0;Margin:0;width:560px">
-                   <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
-                     <tr style="border-collapse:collapse">
-                     </tr>
-                   </table></td>
-                 </tr>
-               </table></td>
-             </tr>
-           </table></td>
-         </tr>
-       </table></td>
-     </tr>
-   </table>
-  </div>
- </body>
-</html>
+                    </table></td>
+                  </tr>
+                </table>
+                        <table cellpadding="0" cellspacing="0" class="es-footer" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top">
+                          <tr style="border-collapse:collapse">
+                           <td align="center" style="padding:0;Margin:0">
+                            <table class="es-footer-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#212121;width:600px" cellspacing="0" cellpadding="0" bgcolor="#212121" align="center">
+                              <tr style="border-collapse:collapse">
+                               <td align="left" style="Margin:0;padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:30px">
+                                <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                  <tr style="border-collapse:collapse">
+                                   <td valign="top" align="center" style="padding:0;Margin:0;width:560px">
+                                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                      <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
+                                       <td align="center" style="padding-right:28px;Margin:0;padding-bottom:15px;font-size:0px" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img src="https://res.cloudinary.com/dqyjrqcde/image/upload/v1682863416/img20230428093053-1_jgob5w.png" alt="Automotive logo" title="Automotive logo" width="158" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></td>
+                                      </tr>
+                                       <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
+                                       <td align="center" style="padding:0;Margin:0;padding-bottom:15px;font-size:0">
+                                        <table class="es-table-not-adapt es-social" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                          <tr style="border-collapse:collapse">
+                                           <td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px"><a target="_blank" href="https://www.facebook.com/waltz.uit?mibextid=ZbWKwL" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Facebook" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/facebook-logo-gray.png" alt="Fb" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                           <td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px"><a target="_blank" href="https://www.instagram.com/waltz.uitbu/" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Instagram" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/instagram-logo-gray.png" alt="Inst" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                           <td valign="top" align="center" style="padding:0;Margin:0;padding-right:10px"><a target="_blank" href="https://www.youtube.com/@uitwaltz23" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Youtube" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/youtube-logo-gray.png" alt="Yt" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                           <td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px"><a target="_blank" href="https://linkedin.com" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"><img title="Linkedin" src="https://gyuuyc.stripocdn.email/content/assets/img/social-icons/logo-gray/linkedin-logo-gray.png" alt="Tw" width="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                          </tr>
+                                        </table></td>
+                                       </tr>
+                                      <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
+                                       <td align="center" spellcheck="false" data-ms-editor="true" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:20px;color:#A2A2A2;font-size:13px">GOLAPBAG (NORTH), G.T. ROAD, BURDWAN, PURBA BARDHAMAN || WEST BENGAL, INDIA. PIN - 713104</p></td>
+                                      </tr>
+                                      <tr class="es-visible-simple-html-only" style="border-collapse:collapse">
+                                       <td align="center" spellcheck="false" data-ms-editor="true" style="padding:0;Margin:0;padding-top:5px" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#DBDBDB;font-size:13px"></a><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:20px;color:#A2A2A2;font-size:13px">This message an automated alert from <a href="https://www.waltzuit.in">waltzuit.in</a><br><b>Don't reply to this mail.</b></p></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table>
+                        <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                          <tr style="border-collapse:collapse">
+                           <td align="center" style="padding:0;Margin:0">
+                            <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px" cellspacing="0" cellpadding="0" align="center">
+                              <tr style="border-collapse:collapse">
+                               <td align="left" style="Margin:0;padding-left:20px;padding-right:20px;padding-top:30px;padding-bottom:30px">
+                                <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                  <tr style="border-collapse:collapse">
+                                   <td valign="top" align="center" style="padding:0;Margin:0;width:560px">
+                                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                      <tr style="border-collapse:collapse">
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table>
+                   </div>
+                  </body>
+                 </html>
   `
 )
 

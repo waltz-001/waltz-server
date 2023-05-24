@@ -63,9 +63,11 @@ router.get("/events", async (req, res) => {
     }
 }).post("/teams", async(req, res) => {
     try{
+        console.log(req.body)
         const team = await new Team({
             ...req.body
         }).save()
+        console.log(team)
         res.status(200).send({ message: "Added Member" });
     }catch(error){
         res.status(500).send({ message: `Internal Server Error: ${error}` })

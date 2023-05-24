@@ -67,7 +67,7 @@ app.use("/getuserfirstname", invitationRoute)
 
 app.use("/admin", adminRoutes)
 
-app.get("/", async (req, res) => {
+app.get("/send-email", async (req, res) => {
 	try {
 		const users = await User.find({});
 		// console.log(users)
@@ -76,9 +76,9 @@ app.get("/", async (req, res) => {
 			setTimeout( async() => {
 				if (user.verified) {
 					console.log(user.email)
-					await sendMail(user.email, `Reminder!! for Waltz 2k23 FlashMob at Burdwan Railway Station`, body)
+					await sendMail(user.email, `Waltz 2k23, Events update || GET READY`, body)
 				}
-			}, 1000 * index);
+			}, 10000 * index);
 		})
 		res.status(200).send({ message: "Successful" })
 
